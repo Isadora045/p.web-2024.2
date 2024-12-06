@@ -1,4 +1,4 @@
-let pilhaPessoas = []; // Inicializa a lista vazia
+let pilhaPessoas = []; 
 const nomeInput = document.getElementById("nomePessoa");
 const adicionarButton = document.getElementById("adicionarPessoa");
 const removerButton = document.getElementById("removerPessoa");
@@ -13,10 +13,10 @@ function atualizarLista() {
 }
 
 adicionarButton.addEventListener("click", function() {
-  let nome = nomeInput.value.trim(); // Remove espaços em branco
+  let nome = nomeInput.value.trim(); 
   if (nome !== "") {
     pilhaPessoas.push(nome);
-    nomeInput.value = ""; // Limpa o campo de entrada
+    nomeInput.value = ""; 
      atualizarLista();
   } else {
     alert("Por favor, digite um nome.");
