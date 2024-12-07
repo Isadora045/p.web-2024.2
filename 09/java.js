@@ -11,18 +11,16 @@ function atualizarLista() {
     listaPessoasElement.appendChild(item);
   }
 }
-
 adicionarButton.addEventListener("click", function() {
   let nome = nomeInput.value.trim(); 
   if (nome !== "") {
     pilhaPessoas.push(nome);
     nomeInput.value = ""; 
-     atualizarLista();
+    atualizarLista();
   } else {
     alert("Por favor, digite um nome.");
   }
 });
-
 removerButton.addEventListener("click", function() {
   if (pilhaPessoas.length > 0) {
     let ultimaPessoa = pilhaPessoas.pop();
